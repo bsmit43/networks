@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NetWorks - Professional website">
+  <meta name="generator" content="Website Generator">
+  <title>NetWorks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-gray-50">
+  
+<!-- NAV SECTION -->
+<nav class="bg-gray-900 text-white py-4 shadow-md fixed top-0 w-full z-50" data-animate="fade-down">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+            <a href="/" class="flex items-center">
+                <img src="/api/placeholder/50/50" alt="NetWorks Logo" class="h-8 mr-2">
+                <span class="font-bold text-xl">NetWorks</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="/" class="hover:text-red-500 transition duration-300">Home</a>
+                <a href="/solutions" class="hover:text-red-500 transition duration-300">Solutions</a>
+                <a href="/services" class="hover:text-red-500 transition duration-300">Services</a>
+                <a href="/products" class="hover:text-red-500 transition duration-300">Products</a>
+                <a href="/about" class="hover:text-red-500 transition duration-300">About Us</a>
+                <a href="/contact" class="hover:text-red-500 transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white hover:text-red-500 focus:outline-none focus:shadow-outline">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="md:hidden" id="mobile-menu">
+        <div class="bg-gray-800 py-2 px-4">
+            <a href="/" class="block py-1 hover:text-red-500 transition duration-300">Home</a>
+            <a href="/solutions" class="block py-1 hover:text-red-500 transition duration-300">Solutions</a>
+            <a href="/services" class="block py-1 hover:text-red-500 transition duration-300">Services</a>
+            <a href="/products" class="block py-1 hover:text-red-500 transition duration-300">Products</a>
+            <a href="/about" class="block py-1 hover:text-red-500 transition duration-300">About Us</a>
+            <a href="/contact" class="block py-1 hover:text-red-500 transition duration-300">Contact</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</nav>
+
+<!-- HEADER SECTION -->
+<header class="bg-gray-900 text-white">
+    <div class="relative">
+        <img src="/images/gaace63f9473f103d77a8b0e966e3c2034d895cef71242653f7fb0dd80e7ea4e2b023917fc2d44ce7c5b564cfca014cb7b3f8db0bc0ad3a9de32d3b664d9ac91e_640.jpg" alt="IoT Network" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="relative container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between flex-wrap mb-8" data-animate="fade-down">
+                <div class="flex items-center flex-shrink-0 text-white mr-6">
+                    <span class="font-semibold text-2xl tracking-tight">NetWorks</span>
+                </div>
+                <div class="block lg:hidden">
+                    <button class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                    <div class="text-sm lg:flex-grow">
+                        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">
+                            Solutions
+                        </a>
+                        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">
+                            Industries
+                        </a>
+                        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">
+                            About
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-900 hover:bg-white mt-4 lg:mt-0">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="text-center" data-animate="fade-up">
+                <h1 class="text-4xl font-bold mb-4">Empowering Businesses with Intelligent IoT Solutions</h1>
+                <p class="text-lg mb-8">Transform your operations, enhance efficiency, and unlock new possibilities with our cutting-edge Internet of Things technology.</p>
+                <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                    Explore Our Solutions
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="md:order-2" data-animate="fade-left">
+        <img src="/images/g0ed43e173d6562e0d8736cd8bb928f02a99c84b9c1d45cce2d78332f788633ccca864b213b5551219a3c8d1626f0a338a9a08fc38ef75a9221634fe798514107_640.jpg" alt="IoT Solutions" class="rounded-lg shadow-lg">
+      </div>
+      <div class="md:order-1" data-animate="fade-right">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">About NetWorks: Connecting the Future</h2>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          At NetWorks, we're passionate about transforming industries through the power of the Internet of Things (IoT). We believe that connected devices and intelligent data analysis can unlock unprecedented levels of efficiency, productivity, and innovation.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          Founded in 2018, NetWorks has rapidly grown into a leading provider of end-to-end IoT solutions. From sensor integration and data acquisition to cloud-based analytics and actionable insights, we offer a comprehensive suite of services designed to meet the unique needs of our clients.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          Our team comprises experienced engineers, data scientists, and business strategists who are dedicated to delivering cutting-edge IoT solutions that drive tangible results. We work closely with our clients to understand their specific challenges and develop customized strategies that maximize the value of their IoT investments.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          We are committed to providing secure, reliable, and scalable IoT solutions that empower businesses to thrive in the connected world.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-16">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Our Core Values</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-6 bg-white rounded-lg shadow-md" data-animate="fade-up">
+          <i class="fas fa-rocket text-red-500 text-3xl mb-4"></i>
+          <h4 class="text-xl font-semibold text-gray-700 mb-2">Innovation</h4>
+          <p class="text-gray-600">We constantly explore new technologies and approaches to deliver innovative IoT solutions that exceed our clients' expectations.</p>
+        </div>
+        <div class="text-center p-6 bg-white rounded-lg shadow-md" data-animate="fade-up" data-animation-delay="200">
+          <i class="fas fa-shield-alt text-red-500 text-3xl mb-4"></i>
+          <h4 class="text-xl font-semibold text-gray-700 mb-2">Security</h4>
+          <p class="text-gray-600">We prioritize the security of our clients' data and systems, implementing robust security measures at every level of our IoT solutions.</p>
+        </div>
+        <div class="text-center p-6 bg-white rounded-lg shadow-md" data-animate="fade-up" data-animation-delay="400">
+          <i class="fas fa-users text-red-500 text-3xl mb-4"></i>
+          <h4 class="text-xl font-semibold text-gray-700 mb-2">Collaboration</h4>
+          <p class="text-gray-600">We believe in the power of collaboration, working closely with our clients and partners to achieve shared success.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-5xl font-bold text-gray-800 mb-4" data-animate="fade-in">Our IoT Solutions</h2>
+            <p class="text-gray-600 text-lg" data-animate="fade-in" data-animate-delay="200">Empowering businesses with innovative IoT solutions that drive efficiency, productivity, and growth.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up">
+                <img src="/images/g6ee84b9188f406c963b0b81a689297e0a1e2dc02df21cd1d63eeb214db2af3fa03ea84358834b890aeed4d999790b83427252b9b46f8cdb21dd8132dfbc7a0ce_640.jpg" alt="Smart Agriculture" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Smart Agriculture</h3>
+                <p class="text-gray-600">Optimize crop yields and resource utilization with our smart agriculture solutions. Monitor soil conditions, weather patterns, and irrigation systems in real-time.</p>
+                <a href="#" class="inline-block mt-4 text-red-500 hover:text-red-700 font-medium">Learn More</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="200">
+                <img src="/images/g0ed43e173d6562e0d8736cd8bb928f02a99c84b9c1d45cce2d78332f788633ccca864b213b5551219a3c8d1626f0a338a9a08fc38ef75a9221634fe798514107_640.jpg" alt="Industrial IoT" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Industrial IoT</h3>
+                <p class="text-gray-600">Enhance operational efficiency and reduce downtime with our Industrial IoT solutions. Monitor equipment performance, predict maintenance needs, and optimize production processes.</p>
+                <a href="#" class="inline-block mt-4 text-red-500 hover:text-red-700 font-medium">Learn More</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="400">
+                <img src="/images/g0c9e3d745a8248b4760db3145c396399d8c6bd53812107bb091c926e88bb3e93b43941673ae6a99ff176f6c4f0376b402d8d8348d51d6ff3b6c6e8c833583a14_640.jpg" alt="Smart City Solutions" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Smart City Solutions</h3>
+                <p class="text-gray-600">Build smarter, more sustainable cities with our IoT solutions. Optimize traffic flow, manage energy consumption, and improve public safety.</p>
+                <a href="#" class="inline-block mt-4 text-red-500 hover:text-red-700 font-medium">Learn More</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up">
+                <img src="/images/g5239788a709268b13293868318335b7ac4def7396ec8042724e30ee56b3cfd6675676ffe8b84302ae3b4d043eefbdc723df067d12761b48c3c8312701e5993d1_640.jpg" alt="Healthcare IoT" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Healthcare IoT</h3>
+                <p class="text-gray-600">Improve patient care and streamline healthcare operations with our IoT solutions. Monitor patient health, track medical equipment, and manage inventory in real-time.</p>
+                <a href="#" class="inline-block mt-4 text-red-500 hover:text-red-700 font-medium">Learn More</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="200">
+                <img src="/images/g5f8fa7b00750ac744134321a833939ebdb17ad1262e64dc29f31c6288d93347a071dc30c38398bf6a391e3766239e51019b886e686b60395c4441f9c6d1745c5_640.jpg" alt="Logistics and Supply Chain" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Logistics & Supply Chain</h3>
+                <p class="text-gray-600">Optimize your supply chain and improve logistics efficiency with our IoT solutions. Track shipments, monitor inventory levels, and manage warehouse operations in real-time.</p>
+                <a href="#" class="inline-block mt-4 text-red-500 hover:text-red-700 font-medium">Learn More</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="400">
+                <img src="/images/g19a09db4270d5da39764759ae1e0ac2e4e0f1dd35d1d0e40daf57f1a2d34eb40c0622ced10509e5f1715825a0c25b1358906556bdfec3e1f6eca8f95ec5b6844_640.jpg" alt="Energy Management" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Energy Management</h3>
+                <p class="text-gray-600">Reduce energy consumption and lower utility costs with our IoT solutions. Monitor energy usage, optimize building performance, and manage renewable energy resources.</p>
+                <a href="#" class="inline-block mt-4 text-red-500 hover:text-red-700 font-medium">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section id="features" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-5xl font-bold text-gray-800 mb-4" data-animate="fade-in">
+                Unlocking the Power of IoT
+            </h2>
+            <p class="text-gray-600 lg:text-lg" data-animate="fade-in" data-animate-delay="200">
+                Explore how NetWorks is revolutionizing industries through intelligent IoT solutions.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up">
+                <img src="/images/g5239788a709268b13293868318335b7ac4def7396ec8042724e30ee56b3cfd6675676ffe8b84302ae3b4d043eefbdc723df067d12761b48c3c8312701e5993d1_640.jpg" alt="Smart Agriculture" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Smart Agriculture</h3>
+                <p class="text-gray-600">
+                    Optimize crop yields and resource management with our IoT-powered agriculture solutions. Monitor soil conditions, weather patterns, and irrigation systems in real-time.
+                </p>
+                <a href="#" class="text-red-500 hover:text-red-700 mt-4 inline-block">Learn More</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="200">
+                <img src="/images/g0983b289019ba140c844349ffb6d883d9b5c0e736287e27bdefaba87188a98d1dd1e9aee098532a51fa19cf3603463e7dcc3e4aed42474de2caf9c7a3fd4fe92_640.jpg" alt="Connected Healthcare" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Connected Healthcare</h3>
+                <p class="text-gray-600">
+                    Improve patient care and streamline healthcare operations with our connected devices. Track vital signs, monitor medication adherence, and enable remote patient monitoring.
+                </p>
+                <a href="#" class="text-red-500 hover:text-red-700 mt-4 inline-block">Learn More</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="400">
+                <img src="/images/g0c9e3d745a8248b4760db3145c396399d8c6bd53812107bb091c926e88bb3e93b43941673ae6a99ff176f6c4f0376b402d8d8348d51d6ff3b6c6e8c833583a14_640.jpg" alt="Smart Manufacturing" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Smart Manufacturing</h3>
+                <p class="text-gray-600">
+                    Enhance efficiency and reduce downtime in your manufacturing processes. Monitor equipment performance, predict maintenance needs, and optimize production workflows.
+                </p>
+                <a href="#" class="text-red-500 hover:text-red-700 mt-4 inline-block">Learn More</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up">
+                <img src="/images/g6ee84b9188f406c963b0b81a689297e0a1e2dc02df21cd1d63eeb214db2af3fa03ea84358834b890aeed4d999790b83427252b9b46f8cdb21dd8132dfbc7a0ce_640.jpg" alt="Smart City Solutions" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Smart City Solutions</h3>
+                <p class="text-gray-600">
+                    Build more sustainable and livable cities with our IoT-enabled solutions. Optimize traffic flow, manage energy consumption, and improve public safety.
+                </p>
+                <a href="#" class="text-red-500 hover:text-red-700 mt-4 inline-block">Learn More</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="200">
+                <img src="/images/g19a09db4270d5da39764759ae1e0ac2e4e0f1dd35d1d0e40daf57f1a2d34eb40c0622ced10509e5f1715825a0c25b1358906556bdfec3e1f6eca8f95ec5b6844_640.jpg" alt="Supply Chain Optimization" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Supply Chain Optimization</h3>
+                <p class="text-gray-600">
+                    Track and manage your inventory and logistics more efficiently with our IoT platform. Monitor product location, temperature, and condition throughout the supply chain.
+                </p>
+                <a href="#" class="text-red-500 hover:text-red-700 mt-4 inline-block">Learn More</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-animate-delay="400">
+                <img src="/images/g41f7d613b2dfbd153a0ce5aaaf97e714e48cb7b44580b6d3a94c5b3a1615d054d28176e4a45ab6ce0eda79228ec27405638b026cde3c15982e3113c8b5ad104f_640.jpg" alt="Predictive Maintenance" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Predictive Maintenance</h3>
+                <p class="text-gray-600">
+                    Reduce equipment downtime and maintenance costs with our predictive maintenance solutions. Analyze sensor data to identify potential issues before they become critical.
+                </p>
+                <a href="#" class="text-red-500 hover:text-red-700 mt-4 inline-block">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
